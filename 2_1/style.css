@@ -1,0 +1,7 @@
+p{
+    color: rgb(244, 66, 87);
+}
+
+.active:hover {
+    background-color: rgb(255, 255, 7);
+}
