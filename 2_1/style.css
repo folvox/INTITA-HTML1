@@ -1,7 +1,49 @@
-p{
-    color: rgb(244, 66, 87);
-}
+body {
 
-.active:hover {
-    background-color: rgb(255, 255, 7);
-}
+    font-family: Arial, sans-serif;
+    
+    background-color: rgb(186, 221, 254);
+    
+    }
+    
+    h1 {
+    
+    color: rgb(249, 159, 42);
+    
+    }
+    
+    p {
+    
+    font-size: 18px;
+    
+    color: rgb(33, 198, 0);
+    
+    }
+    
+    .nav {
+
+        background-color: rgb(230, 249, 255);
+        
+        padding: 15px;
+        
+        text-align: center;
+        
+        }
+        
+        .nav a {
+        
+        color: rgb(1, 222, 1);
+        
+        text-decoration: none;
+        
+        margin: 0 10px;
+        
+        }
+        
+        .nav a:hover {
+        
+        text-decoration: underline;
+        
+        }
+    
+   
