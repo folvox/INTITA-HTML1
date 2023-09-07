@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Селектори та специфічність CSS</title>
+    <style>
+        /* Стилізація по типу елемента */
+p {
+    font-family: Arial, sans-serif;
+}
+
+/* Стилізація по класу */
+.main-heading {
+    font-size: 2rem;
+}
+
+/* Стилізація по ID */
+#example {
+    text-decoration: underline;
+}
+
+/* Стилізація по атрибуту */
+.highlight {
+    background-color: rgb(255, 59, 59);
+}
+.footer {
+    font-size: small;
+    opacity: 0.5;
+}
+#subtitle {
+    text-align: center;
+    background-color: bisque;
+}
+/* Стилізація за допомогою дочірнього селектора */
+section > h2 {
+    color: rgb(17, 255, 0);
+} 
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="main-heading">Селектори та специфічність CSS</h1>
+        <h2 id="subtitle">Випробування головних селекторів</h2>
+    </header>
+    <main>
+        <section>
+            <h2 id="example">Приклади</h2>
+            <p>Це приклад тексту, <span class="highlight">виділеного</span> за допомогою CSS.</p>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">&copy; 2023 Bazeliuk Oleksandr. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
