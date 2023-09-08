@@ -1,0 +1,52 @@
+$primary-color: rgb(248, 44, 44);
+h2 {
+  color: $primary-color;
+
+}
+@mixin btn($font-size, $border-wigth, $color){
+    border: $border-wigth solid lightcoral; 
+    font-size: $font-size;
+    color: $color;
+}
+
+.btn {
+    @include btn(20px, 2px, green)
+}
+.btn-1 {
+    @include btn(22px, 4px, blue)
+}
+.btn-2 {
+    @include btn(24px, 6px, red)
+}
+.btn-3 {
+    @include btn(26px, 8px, black)
+}
+
+$dark-orange: darkorange;
+
+.test {
+    color: $dark-orange; 
+    transition: 1s;
+    &:hover {
+        color: lighten($dark-orange, 20);
+    }
+    &::after {
+        content: "SS";
+    }
+}
+
+// .test:hover {
+//     color: greenyellow;
+// }
+.test-1 {
+    color: $dark-orange; 
+}
+.test-2 {
+    color: $dark-orange; 
+}
+.test-3 {
+    color: $dark-orange; 
+}
+.test-4 {
+    color: $dark-orange; 
+}
